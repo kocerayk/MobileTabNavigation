@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.45) 3px 9px 9px 3px;
+  border-radius: 20px;
+  height: 720px;
+  width: 360px;
+}
+
+.phone .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100% - 60px);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background-image: url('https://img.freepik.com/free-vector/abstract-paper-cut-shape-wave-background_474888-4420.jpg?t=st=1726183511~exp=1726187111~hmac=fb4ac5c483458ebb49f3e6c6466731798e1557568bad4e8c366a303037aaa920&w=1060');
+  background-size: cover;
+  background-position: center;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+.phone .content .text {
+  background: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(15px); 
+  border-radius: 15px; 
+  padding: 2rem 1.5rem; 
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  width: 90%; 
+  max-width: 300px; 
+  text-align: center; 
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #e3cef7;
+  color: #ffffff;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+nav li {
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3cef7;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: -20px;
+  transition: transform 0.3s ease;
+  z-index: 3;
+}
+
+nav ul li:hover .button-wrapper,
+nav ul li.active .button-wrapper {
+  color: #6e33bf;
+}
+
+nav ul li:hover .button-wrapper {
+  animation: floatingButtonAnimation 0.6s ease infinite;
+}
+
+nav ul li.active .button-wrapper {
+  transform: translateY(-5px);
+}
+
+@keyframes floatingButtonAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
