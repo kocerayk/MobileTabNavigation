@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Magic Navigation Menu Indicator | Codehal</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <title>Mobile Tab Navigation</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+</head>
+<body>
     <div class="phone">
-      <div class="content show about">
-        <div class="text">
-          <h1>About Me</h1>
-          <p>
-            I chose mathematics to sharpen my analytical skills and am expanding into software development. I enjoy stand-up comedy and performing arts.
-          </p>
-        </div>
-      </div>
-      <div class="content blog">
-        <div class="text">
-          <h1>Blog</h1>
-          <p>
-            Check out my blog for insights on software development, mathematics, and creative projects.
-          </p>
-          <ul>
-            <li>Analyzing Problems with Mathematics</li>
-            <li>Creativity in Coding</li>
-            <li>Stand-Up Comedy Insights</li>
-          </ul>
-        </div>
-      </div>
-      <div class="content map">
-        <div class="text">
-          <h1>Roadmap</h1>
-          <p>
-            My goal is to grow in software and UI/UX design while seeking career opportunities.
-          </p>
-        </div>
-      </div>
-      <div class="content contact">
-        <div class="text">
-          <h1>Contact</h1>
-          <p>Email: <a href="mailto:kocerayk@outlook.com">kocerayk@outlook.com</a></p>
-          <p>Phone: <a href="tel:+905400401283">+905400401283</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/kocerayk" target="_blank">in/kocerayk</a></p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li class="active">
-            <div class="button-wrapper">
-              <i class="fa-solid fa-address-card"></i>
-              <p>About Me</p>
+        <div class="content show about">
+            <div class="text">
+                <h1>About Me</h1>
+                <p>
+                    I chose mathematics to sharpen my analytical skills and am expanding into software development. I enjoy stand-up comedy and performing arts.
+                </p>
             </div>
-          </li>
-          <li>
-            <div class="button-wrapper">
-              <i class="fa-brands fa-blogger"></i>
-              <p>Blog</p>
+        </div>
+        <div class="content blog">
+            <div class="text">
+                <h1>Blog</h1>
+                <p>
+                    Check out my blog for insights on software development, mathematics, and creative projects.
+                </p>
+                <ul>
+                    <li>Analyzing Problems with Mathematics</li>
+                    <li>Creativity in Coding</li>
+                    <li>Stand-Up Comedy Insights</li>
+                </ul>
             </div>
-          </li>
-          <li>
-            <div class="button-wrapper">
-              <i class="fa-solid fa-map"></i>
-              <p>Roadmap</p>
+        </div>
+        <div class="content map">
+            <div class="text">
+                <h1>Roadmap</h1>
+                <p>
+                    My goal is to grow in software and UI/UX design while seeking career opportunities.
+                </p>
             </div>
-          </li>
-          <li>
-            <div class="button-wrapper">
-              <i class="fa-solid fa-book-open-reader"></i>
-              <p>Contact</p>
+        </div>
+        <div class="content contact">
+            <div class="text">
+                <h1>Contact</h1>
+                <p>Email: <a href="mailto:kocerayk@outlook.com">kocerayk@outlook.com</a></p>
+                <p>Phone: <a href="tel:+905400401283">+905400401283</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/kocerayk" target="_blank">in/kocerayk</a></p>
             </div>
-          </li>
-        </ul>
-      </nav>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                          <ion-icon name="id-card-outline"></ion-icon>
+                        </span>
+                        <span class="text">About Me</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                          <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                        </span>
+                        <span class="text">Blog</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                          <ion-icon name="map-outline"></ion-icon>
+                        </span>
+                        <span class="text">Roadmap</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                          <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
     </div>
-  </body>
+</body>
 </html>
